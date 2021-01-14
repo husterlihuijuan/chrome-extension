@@ -1,0 +1,66 @@
+.modal-in-right {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    box-shadow: rgb(160 156 143) 0px 0px 10px;
+    animation-duration: 0.5s;
+    z-index: 999999;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.operator {
+    margin-bottom: 8px;
+}
+
+.language-select {
+    width: 100px;
+    height: 24px;
+}
+
+#switch_lang {
+    width: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#translate_btn {
+    width: 84px;
+    border: 0;
+    font-weight: 400;
+    background-color: #4395ff;
+    font-size: 14px;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#translate_btn:focus {
+    outline: 0;
+}
+
+#close_icon {
+    float: right;
+    cursor: pointer;
+    transform: rotateX(45deg);
+}
+
+.popup_wrap {
+    display: flex;
+}
+
+#translate_input {
+    width: 200px;
+    height: 100px;
+}
+
+#translate_res {
+    width: 200px;
+    height: 102px;
+    color: #333;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    overflow: auto;
+}

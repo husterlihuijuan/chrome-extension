@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .operator {
+            margin-bottom: 8px;
+        }
+        
+        .language-select {
+            width: 100px;
+            height: 24px;
+        }
+        
+        #switch_lang {
+            width: 20px;
+            cursor: pointer;
+        }
+        
+        #translate_btn {
+            width: 84px;
+            border: 0;
+            font-weight: 400;
+            background-color: #4395ff;
+            font-size: 14px;
+            border-radius: 2px;
+            color: #fff;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        #translate_btn:focus {
+            outline: 0;
+        }
+        
+        .popup_wrap {
+            display: flex;
+        }
+        
+        #translate_input {
+            width: 200px;
+            height: 100px;
+        }
+        
+        #translate_res {
+            width: 200px;
+            font-size: 16px;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='operator'>
+        <select id='from' class='language-select'>
+            <option value='en'>英文</option>
+            <option value='zh'>中文</option>
+        </select>
+        <img src='image/switch.png' id='switch_lang' />
+        <select id='to' class='language-select'>
+            <option value='zh'>中文</option>
+            <option value='en'>英文</option>
+        </select>
+        <button id='translate_btn'>翻译</button>
+    </div>
+
+
+    <div class='popup_wrap'>
+        <textarea id='translate_input'></textarea>
+        <div id='translate_res'></div>
+    </div>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script src="js/md5.js"></script>
+    <script type='text/javascript' src='js/popup.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "翻译扩展",
+    "version": "0.0.1",
+    "description": "用来翻译的插件",
+    "icons": {
+        "16": "image/icon.png",
+        "48": "image/icon.png",
+        "128": "image/icon.png"
+    },
+    "browser_action": {
+        "default_icon": "image/icon.png",
+        "default_title": "翻译",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["js/jquery.min.js", "js/tool.js", "js/content.js"],
+        "css": ["css/inject.css"],
+        "run_at": "document_start"
+    }],
+    "background": {
+        "scripts": ["js/md5.js", "js/jquery.min.js", "js/background.js"]
+    },
+    "permissions": ["storage", "contextMenus", "tabs"],
+    "web_accessible_resources": ["js/inject.js", "image/switch.png"],
+    "options_ui": {
+        "page": "options.html"
+    }
+}
